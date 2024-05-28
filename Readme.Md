@@ -15,9 +15,11 @@ Sellers cannot access or modify books uploaded by other sellers.
 
 
 Installation
+
 Clone the project:
 
 git clone https://github.com/yadavvishal/stratex-backend-Assign
+
 
 Install dependencies:
 
@@ -29,6 +31,8 @@ npm run dev
 
 API Endpoints:
 
+1- Register a Seller 
+
 POST /api/users/register
 {
 "name": "John Seller",
@@ -36,46 +40,52 @@ POST /api/users/register
 "password": "password123",
 "role": "seller"
 }
-Login as the seller:
 
-json
+
+2- Login as the seller:
 
 POST /api/users/login
 {
 "email": "seller@example.com",
 "password": "password123"
 }
-Use the returned token in the Authorization header for the following requests.
-Upload books from URL:
 
-json
+
+Use the returned token in the Authorization header for the following requests.
+
+3- Upload books from URL:
+
 
 POST /api/books/upload
 {
 "url": "https://docs.google.com/spreadsheets/d/16dSwNe8u4Aj4wCRka3bYtIWhFyjDlVZuXPRgmPQKpE0/export?format=csv&gid=1612897053"
 }
-View seller's books:
 
-json
+
+4- View seller's books:
+
 
 GET /api/books/seller
-Update a book:
 
-json
+
+5- Update a book:
+
 
 PUT /api/books/:id
 {
 "title": "Updated Title",
 "author": "Updated Author"
 }
-Delete a book:
 
-json
+
+6- Delete a book:
+
 
 DELETE /api/books/:id
-Register a buyer:
 
-json
+
+6- Register a buyer:
+
 
 POST /api/users/register
 {
@@ -84,23 +94,30 @@ POST /api/users/register
 "password": "password123",
 "role": "buyer"
 }
-Login as the buyer:
 
-json
+
+6- Login as the buyer:
+
 
 POST /api/users/login
 {
 "email": "buyer@example.com",
 "password": "password123"
 }
-Use the returned token in the Authorization header for the following requests.
-View all books:
 
-json
+
+Use the returned token in the Authorization header for the following requests.
+
+
+7- View all books:
+
 
 GET /api/books
-View book details:
 
-json
+
+8- View book details:
+
+
 
 GET /api/books/:id
+
