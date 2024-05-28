@@ -23,7 +23,8 @@ Clone the project:
 
 bash
 
-git clone <repository_url>
+git clone https://github.com/yadavvishal/stratex-backend-Assign
+
 cd stratex-backend
 Install dependencies:
 
