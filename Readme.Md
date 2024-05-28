@@ -84,7 +84,7 @@ PUT /api/books/:id
 DELETE /api/books/:id
 
 
-6- Register a buyer:
+7- Register a buyer:
 
 
 POST /api/users/register
@@ -96,7 +96,7 @@ POST /api/users/register
 }
 
 
-6- Login as the buyer:
+8- Login as the buyer:
 
 
 POST /api/users/login
@@ -109,13 +109,13 @@ POST /api/users/login
 Use the returned token in the Authorization header for the following requests.
 
 
-7- View all books:
+9- View all books:
 
 
 GET /api/books
 
 
-8- View book details:
+10- View book details:
 
 
 
